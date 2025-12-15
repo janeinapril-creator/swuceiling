@@ -1,0 +1,182 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+
+
+.background-section {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;  
+    z-index: -1;   
+    display: flex;
+    overflow: hidden;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    filter: brightness(0.8);
+}
+
+.campus-map-container {
+    position: relative;
+    width: 1000px; 
+    height: 700px; 
+    overflow: hidden;
+}
+
+
+.map-title {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    z-index: 10; 
+}
+
+.building {
+    position: absolute;
+    display: block;
+}
+
+.building img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+
+#building1 { /* 50주년 */
+    top: 10%;    
+    left: 65%;
+}
+
+#building2 { /* 인사관 */
+    top: 15%;;
+    left: 45%;
+}
+
+#building3 { /*대강당 */
+    top: 55%; 
+    left: 55%;
+}
+
+#building4 { /*누리관 */
+    top: 49%;
+    left: 36%;
+}
+
+#building5 { /* 도서관 */
+    top: 40%;
+    left: 45%;
+}
+
+#building6 { /*과학관2 */
+    top: 40.5%;
+    left: 32%; 
+}
+
+#building7 { /* 조예관 */
+    top: 23%;
+    left: 35%;
+}
+
+#building8 { /*과학관1 */
+    top: 55%;
+    left: 26%;
+}
+
+
+
+footer {
+    text-align: center;
+    position: fixed; 
+    bottom: 0;
+    color: #fff; 
+}
+
+
+.building img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .campus-map-container {
+        width: 800px; 
+        height: 560px; 
+        margin: 0 auto; 
+    }
+
+
+
+    #building1 { /* 50주년 */
+        top: 150px;;  
+        left: 320px;  
+     
+    }
+
+    #building2 { /* 인사관*/
+        top: 185px;
+        left: 190px;  
+    }
+
+    #building3 { /*대강당:*/
+        top: 434px;   
+        left: 270px;  
+    }
+
+    #building4 { /*누리관*/
+        top: 375px;
+        left: 110px; 
+    }
+
+    #building5 { /* 도서관 */
+        top: 330px;  
+        left: 185px; 
+    }
+
+    #building6 { /*과학관2 */
+        top: 326px; 
+        left: 64px;
+    }
+
+    #building7 { /* 조예관*/
+        top: 226px; 
+        left: 90px;
+    }
+
+    #building8 { /*과학관1*/
+        top: 410px;
+        left: 10px;
+    }
+
+
+
+    .building img {
+        transform: scale(0.7);
+    }
+    .campus-map-container {
+        width: 90vw; 
+        height: 63vw;
+        margin: 0 auto;
+    }
+
+}
+
